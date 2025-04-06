@@ -12,9 +12,18 @@
 
 ## 설치
 
+### NPM 패키지로 설치
+
+```bash
+# npm을 통한 설치
+npm install naver-shopping-insight-mcp
+```
+
+### 소스코드에서 설치
+
 ```bash
 # 저장소 클론
-git clone https://github.com/your-username/naver-shopping-insight-mcp.git
+git clone https://github.com/tenacl/naver-shopping-insight-mcp.git
 cd naver-shopping-insight-mcp
 
 # 의존성 설치
@@ -52,6 +61,27 @@ npm run build
 
 ```bash
 npm start
+```
+
+### npm 패키지로 설치한 경우
+
+npm 패키지로 설치한 경우 MCP 설정 파일에 다음과 같이 설정할 수 있습니다:
+
+```json
+{
+  "mcpServers": {
+    "naver-shopping-insight": {
+      "command": "npx",
+      "args": [
+        "naver-shopping-insight-mcp"
+      ],
+      "env": {
+        "NAVER_CLIENT_ID": "YOUR-CLIENT-ID",
+        "NAVER_CLIENT_SECRET": "YOUR-CLIENT-SECRET"
+      }
+    }
+  }
+}
 ```
 
 ### MCP 클라이언트에서 사용
