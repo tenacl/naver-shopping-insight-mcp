@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "naver-shopping-insight": {
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": {
+        "NAVER_CLIENT_ID": "YOUR-CLIENT-ID",
+        "NAVER_CLIENT_SECRET": "YOUR-CLIENT-SECRET"
+      }
+    }
+  }
+} 
