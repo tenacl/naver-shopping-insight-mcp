@@ -17,7 +17,7 @@
     "url": "https://github.com/tenacl/naver-shopping-insight-mcp.git"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.2.0",
+    "@modelcontextprotocol/sdk": "^1.8.0",
     "axios": "^1.6.0",
     "zod": "^3.22.4"
   },
